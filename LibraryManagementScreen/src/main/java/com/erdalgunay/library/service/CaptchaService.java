@@ -1,4 +1,4 @@
-package com.erdalgunay.library.sevice;
+package com.erdalgunay.library.service;
 
 import com.erdalgunay.library.domain.model.CaptchaModel;
 import net.tanesha.recaptcha.ReCaptchaImpl;

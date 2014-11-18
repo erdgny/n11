@@ -4,9 +4,9 @@ import com.erdalgunay.library.domain.Book;
 import com.erdalgunay.library.domain.model.BookModel;
 import com.erdalgunay.library.domain.model.BookWithCaptchaModel;
 import com.erdalgunay.library.domain.model.CaptchaModel;
-import com.erdalgunay.library.sevice.BookService;
+import com.erdalgunay.library.service.BookService;
 
-import com.erdalgunay.library.sevice.CaptchaService;
+import com.erdalgunay.library.service.CaptchaService;
 
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
