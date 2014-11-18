@@ -42,6 +42,7 @@
     <div class="fadein fadeout alert-box add-success panel" ng-hide="addSuccess"><span>success: </span>Book is added</div>
     <div class="fadein fadeout alert-box update-success panel" ng-hide="updateSuccess"><span>success: </span>Book is updated</div>
     <div class="fadein fadeout alert-box delete-success panel" ng-hide="deleteSuccess"><span>NOTICE: </span>Book is deleted successfully</div>
+        <div class="fadein fadeout alert-box warning panel" ng-hide="captchaFail"><span>WARNING: </span>Wrong Captcha</div>
     <h2 class="page-title">Library Management Screen</h2>
     <div id="task-panel" class="fadein fadeout showpanel panel" ng-show="addToggle && editToggle && infoGif">
         <div class="panel-heading">

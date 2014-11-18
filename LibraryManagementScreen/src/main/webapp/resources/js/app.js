@@ -14,6 +14,7 @@ taskManagerModule.controller('taskManagerController', function ($scope,$http, $t
     $scope.addSuccess=true;
     $scope.updateSuccess=true;
     $scope.deleteSuccess=true;
+    $scope.captchaFail=true;
 
     $scope.viewAllAddressBook = function viewAllAddressBook(){
         $http.post(urlHolder.records).
@@ -50,7 +51,9 @@ taskManagerModule.controller('taskManagerController', function ($scope,$http, $t
                 success(function(response){
                     $scope.infoGif=true;
                     if(response == "wrongCaptcha"){
-//                        alert("Captcha is invalid");
+                        $scope.captchaFail = false;
+                        $timeout(function () { $scope.captchaFail = true; }, 3000);
+                        $scope.viewAllAddressBook();
                         $scope.addToggle=false;
                     }
                     else if(response == "failSave"){
